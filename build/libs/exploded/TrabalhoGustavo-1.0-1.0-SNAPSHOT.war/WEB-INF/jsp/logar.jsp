@@ -24,7 +24,7 @@
     <div class="cabecalho"></div>
     <div class="menu">
         <ul>
-            <li><a href="/logar">Logar</a></li>
+            <li><a href="/">Logar</a></li>
             <li><a href="/registrar">Registrar</a></li>
         </ul>
     </div>
