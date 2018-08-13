@@ -38,7 +38,7 @@ public class LogarControler {
         return modeloEVisao;
     }
 
-    @RequestMapping(value = "/logar", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView paginaLogin() {
         ModelAndView modeloEVisao = new ModelAndView("logar");
         return modeloEVisao;
