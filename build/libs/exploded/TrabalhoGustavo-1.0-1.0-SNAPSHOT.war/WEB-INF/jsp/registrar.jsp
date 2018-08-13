@@ -25,7 +25,7 @@
 <head>
     <title>Itens Roubados</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="detalhes.css">
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/detalhesLogarERegistrar.css" />" />
 </head>
 <body>
 <div class="principal">

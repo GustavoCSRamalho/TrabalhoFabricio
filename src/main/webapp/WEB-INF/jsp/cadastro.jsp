@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 
 <%--<html>--%>
 <%--<head>--%>
@@ -26,7 +28,7 @@
 <head>
     <title>Itens Roubados</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="detalhes.css">
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/detalhes.css" />" />
 </head>
 <body>
 <div class="principal">
