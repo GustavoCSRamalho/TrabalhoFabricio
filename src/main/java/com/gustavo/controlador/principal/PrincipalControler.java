@@ -1,8 +1,8 @@
 package com.gustavo.controlador.principal;
 
+import com.gustavo.modelo.ocorrencia.Ocorrencia;
+import com.gustavo.modelo.telefone.Telefone;
 import com.gustavo.visao.boletim.OcorrenciaServico;
-import com.javapointers.controllers.modelo.ocorrencia.Ocorrencia;
-import com.javapointers.controllers.modelo.telefone.Telefone;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

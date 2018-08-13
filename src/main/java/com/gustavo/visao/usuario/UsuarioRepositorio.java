@@ -1,6 +1,6 @@
 package com.gustavo.visao.usuario;
 
-import com.javapointers.controllers.modelo.usuario.Usuario;
+import com.gustavo.modelo.usuario.Usuario;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 

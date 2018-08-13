@@ -1,8 +1,8 @@
 package com.gustavo.controlador.logar;
 
+import com.gustavo.modelo.usuario.Usuario;
+import com.gustavo.modelo.usuario.dto.UsuarioDTO;
 import com.gustavo.visao.usuario.UsuarioServico;
-import com.javapointers.controllers.modelo.usuario.Usuario;
-import com.javapointers.controllers.modelo.usuario.dto.UsuarioDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

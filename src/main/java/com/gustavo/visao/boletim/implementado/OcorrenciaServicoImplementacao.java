@@ -1,8 +1,8 @@
 package com.gustavo.visao.boletim.implementado;//
 
+import com.gustavo.modelo.ocorrencia.Ocorrencia;
 import com.gustavo.visao.boletim.OcorrenciaRepositorio;
 import com.gustavo.visao.boletim.OcorrenciaServico;
-import com.javapointers.controllers.modelo.ocorrencia.Ocorrencia;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
 package com.gustavo.modelo.ocorrencia;
 
-import com.javapointers.controllers.modelo.telefone.Telefone;
+import com.gustavo.modelo.telefone.Telefone;
 
 import javax.persistence.*;
 import java.io.Serializable;

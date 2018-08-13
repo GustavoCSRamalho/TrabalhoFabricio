@@ -1,8 +1,8 @@
 package com.gustavo.visao.usuario.implementado;//
 
+import com.gustavo.modelo.usuario.Usuario;
 import com.gustavo.visao.usuario.UsuarioRepositorio;
 import com.gustavo.visao.usuario.UsuarioServico;
-import com.javapointers.controllers.modelo.usuario.Usuario;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
