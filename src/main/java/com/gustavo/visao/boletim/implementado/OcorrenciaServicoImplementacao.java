@@ -1,16 +1,13 @@
-package com.javapointers.controllers.visao.boletim.implementado;//package com.javapointers.controllers;
-//
+package com.gustavo.visao.boletim.implementado;//
 
-import com.javapointers.controllers.visao.boletim.OcorrenciaRepositorio;
-import com.javapointers.controllers.visao.boletim.OcorrenciaServico;
+import com.gustavo.visao.boletim.OcorrenciaRepositorio;
+import com.gustavo.visao.boletim.OcorrenciaServico;
 import com.javapointers.controllers.modelo.ocorrencia.Ocorrencia;
-import org.hibernate.tool.hbm2ddl.UniqueConstraintSchemaUpdateStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 
 
 @Service
@@ -21,10 +18,10 @@ public class OcorrenciaServicoImplementacao implements OcorrenciaServico<Ocorren
 
     @Override
     public Ocorrencia salvarOcorrencia(Ocorrencia ocorrencia) {
-        if(repositorio == null){
-            if(ocorrencia != null){
+        if (repositorio == null) {
+            if (ocorrencia != null) {
                 return ocorrencia;
-            }else{
+            } else {
                 return null;
             }
         }
@@ -33,10 +30,10 @@ public class OcorrenciaServicoImplementacao implements OcorrenciaServico<Ocorren
 
     @Override
     public List<Ocorrencia> buscarOcorrencia(String usuario) {
-        if(repositorio == null){
-            if(usuario != null){
+        if (repositorio == null) {
+            if (usuario != null) {
                 return new ArrayList<>();
-            }else{
+            } else {
                 return null;
             }
         }
@@ -45,10 +42,10 @@ public class OcorrenciaServicoImplementacao implements OcorrenciaServico<Ocorren
 
     @Override
     public Ocorrencia buscarOcorrenciaPorCodigo(Long codigo) {
-        if(repositorio == null){
-            if(codigo != null){
+        if (repositorio == null) {
+            if (codigo != null) {
                 return new Ocorrencia();
-            }else{
+            } else {
                 return null;
             }
         }
@@ -57,10 +54,10 @@ public class OcorrenciaServicoImplementacao implements OcorrenciaServico<Ocorren
 
     @Override
     public Ocorrencia alterarOcorrencia(Ocorrencia ocorrencia) {
-        if(repositorio == null){
-            if(ocorrencia != null){
+        if (repositorio == null) {
+            if (ocorrencia != null) {
                 return ocorrencia;
-            }else{
+            } else {
                 return null;
             }
         }
@@ -70,10 +67,10 @@ public class OcorrenciaServicoImplementacao implements OcorrenciaServico<Ocorren
 
     @Override
     public Boolean deletarOcorrencia(Ocorrencia ocorrencia) {
-        if(repositorio == null){
-            if(ocorrencia != null){
+        if (repositorio == null) {
+            if (ocorrencia != null) {
                 return true;
-            }else{
+            } else {
                 return false;
             }
         }

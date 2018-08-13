@@ -1,6 +1,6 @@
-package com.javapointers.controllers.modelo.telefone;
+package com.gustavo.modelo.telefone;
 
-import com.javapointers.controllers.modelo.ocorrencia.Ocorrencia;
+import com.gustavo.modelo.ocorrencia.Ocorrencia;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -15,7 +15,7 @@ public class Telefone implements Serializable {
     private String tel_telefone;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "oc_codigo",referencedColumnName = "oc_codigo")
+    @JoinColumn(name = "oc_codigo", referencedColumnName = "oc_codigo")
     private Ocorrencia ocorrencia;
 
     public Ocorrencia getOcorrencia() {
