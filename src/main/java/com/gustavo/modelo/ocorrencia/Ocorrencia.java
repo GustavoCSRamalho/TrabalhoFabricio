@@ -1,4 +1,4 @@
-package com.javapointers.controllers.modelo.ocorrencia;
+package com.gustavo.modelo.ocorrencia;
 
 import com.javapointers.controllers.modelo.telefone.Telefone;
 

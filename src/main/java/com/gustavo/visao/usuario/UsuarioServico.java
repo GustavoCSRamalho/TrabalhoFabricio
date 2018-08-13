@@ -1,4 +1,4 @@
-package com.javapointers.controllers.visao.usuario;
+package com.gustavo.visao.usuario;
 
 public interface UsuarioServico<T> {
 

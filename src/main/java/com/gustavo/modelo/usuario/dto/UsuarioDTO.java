@@ -1,11 +1,7 @@
-package com.javapointers.controllers.modelo.usuario.dto;
+package com.gustavo.modelo.usuario.dto;
 
-import com.javapointers.controllers.modelo.usuario.Usuario;
+import com.gustavo.modelo.usuario.Usuario;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import java.io.Serializable;
 
 public class UsuarioDTO implements Serializable {
@@ -41,7 +37,7 @@ public class UsuarioDTO implements Serializable {
         this.us_senha = us_senha;
     }
 
-    public Usuario pegarUsuario(){
+    public Usuario pegarUsuario() {
         Usuario usuario = new Usuario();
         usuario.setUs_senha(this.getUs_senha());
         usuario.setUs_codigo(this.getUs_codigo());

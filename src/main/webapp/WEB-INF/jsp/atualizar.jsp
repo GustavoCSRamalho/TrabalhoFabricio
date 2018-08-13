@@ -43,6 +43,7 @@
                 </form>
             </div>
         </div>
+        <a href="/principal">Voltar</a>
     </div>
     <div class="rodape">Desenvolvido por Gustavo Ramalho</div>
 </div>

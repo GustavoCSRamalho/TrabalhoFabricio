@@ -1,8 +1,8 @@
-package com.javapointers.controllers.visao.usuario.implementado;//package com.javapointers.controllers;
-//
+package com.gustavo.visao.usuario.implementado;//
+
+import com.gustavo.visao.usuario.UsuarioRepositorio;
+import com.gustavo.visao.usuario.UsuarioServico;
 import com.javapointers.controllers.modelo.usuario.Usuario;
-import com.javapointers.controllers.visao.usuario.UsuarioRepositorio;
-import com.javapointers.controllers.visao.usuario.UsuarioServico;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,10 +17,10 @@ public class UsuarioServicoImplementacao implements UsuarioServico<Usuario> {
     @Override
     public Usuario salvar(Usuario usuario) {
 
-        if(repositorio == null){
-            if(usuario != null){
+        if (repositorio == null) {
+            if (usuario != null) {
                 return new Usuario();
-            }else{
+            } else {
                 return null;
             }
         }
@@ -30,10 +30,10 @@ public class UsuarioServicoImplementacao implements UsuarioServico<Usuario> {
     @Override
     public Usuario buscarPorUsuario(String usuario) {
 
-        if(repositorio == null){
-            if(usuario != null){
+        if (repositorio == null) {
+            if (usuario != null) {
                 return new Usuario();
-            }else{
+            } else {
                 return null;
             }
         }

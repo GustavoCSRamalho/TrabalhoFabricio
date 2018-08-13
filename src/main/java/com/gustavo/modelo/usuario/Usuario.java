@@ -1,4 +1,4 @@
-package com.javapointers.controllers.modelo.usuario;
+package com.gustavo.modelo.usuario;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

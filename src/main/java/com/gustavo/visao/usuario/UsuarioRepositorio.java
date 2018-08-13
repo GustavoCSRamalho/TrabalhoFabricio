@@ -1,4 +1,4 @@
-package com.javapointers.controllers.visao.usuario;//package com.javapointers.controllers;
+package com.gustavo.visao.usuario;
 
 import com.javapointers.controllers.modelo.usuario.Usuario;
 import org.springframework.data.jpa.repository.Query;
