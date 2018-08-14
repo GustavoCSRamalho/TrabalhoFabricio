@@ -40,9 +40,9 @@
             <li><a href="/registrar">Registrar</a></li>
         </ul>
     </div>
-    <div class="corpo">
+    <div class="corpo ">
         <div class="conteudo">
-            <div class="formulario">
+            <div class="formulario mudarfundo">
                 <form action="registrar" method="post">
                     <p>Usuario : <input id="us_usuario" type="text" name="us_usuario"></p>
                     <p>Senha : <input id="us_senha" type="password" name="us_senha"></p>

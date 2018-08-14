@@ -23,8 +23,8 @@
 </head>
 <body class="fundo">
 <div class="principal">
-    <div class="cabecalho"></div>
-    <div class="menu">
+    <div class="cabecalho "></div>
+    <div class="menu mudarfundo">
         <ul>
             <li><a href="/">Logar</a></li>
             <li><a href="/registrar">Registrar</a></li>
@@ -32,7 +32,7 @@
     </div>
     <div class="corpo">
         <div class="conteudo">
-            <div class="formulario">
+            <div class="formulario mudarfundo">
                 <form action="logar" method="post">
                     <p>Usuario : <input id="us_usuario" type="text" name="us_usuario" ></p>
                     <p>Senha : <input id="us_senha" type="password" name="us_senha" ></p>
