@@ -29,6 +29,8 @@
     <title>Itens Roubados</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/detalhes.css" />" />
+    <script type="application/javascript" src="<c:url value="/resources/javascript/funcoes.js" />"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 <div class="principal">
@@ -43,11 +45,12 @@
         <div class="conteudo">
             <div class="formulario">
                 <form action="cadastro" method="post">
-                    <p>Tipo : <input type="text" name="tipo"></p>
-                    <p>Descricao : <input type="text" name="descricao"></p>
-                    <p>Telefone 1 : <input type="text" name="telefone1"></p>
-                    <p>Telefone 2 : <input type="text" name="telefone2"></p>
-                    <input type="submit" value="Cadastrar">
+                    <p>Tipo : <input id="tipo" type="text" name="tipo"></p>
+                    <p>Descricao : <input id="descricao" type="text" name="descricao"></p>
+                    <p>Telefone 1 : <input id="telefone1" type="text" name="telefone1"></p>
+                    <p>Telefone 2 : <input id="telefone2" type="text" name="telefone2"></p>
+                    <%--<input type="submit" value="Cadastrar">--%>
+                    <a onclick="cadastrar()">Cadastrar</a>
                 </form>
             </div>
         </div>

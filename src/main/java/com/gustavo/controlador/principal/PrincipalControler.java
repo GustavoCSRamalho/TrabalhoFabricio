@@ -90,7 +90,7 @@ public class PrincipalControler {
                                              @RequestParam(value = "telefone1") String telefone1,
                                              @RequestParam(value = "telefone2") String telefone2) {
 
-        ModelAndView modeloEVisao = new ModelAndView("atualizar");
+        ModelAndView modeloEVisao = new ModelAndView("redirect:/principal");
 
 
         Ocorrencia ocorrencia = new Ocorrencia();
@@ -125,8 +125,14 @@ public class PrincipalControler {
 
         this.ocorrenciaServico.deletarOcorrencia(ocorrencia);
 
-        return new ModelAndView("principal");
+        return new ModelAndView("redirect:/principal");
 
+    }
+
+    @RequestMapping(value = "/sair",method = RequestMethod.GET)
+    private ModelAndView sair(HttpSession sessao){
+        sessao.setAttribute("sessao_usuario",null);
+        return new ModelAndView("redirect:/");
     }
 
 }

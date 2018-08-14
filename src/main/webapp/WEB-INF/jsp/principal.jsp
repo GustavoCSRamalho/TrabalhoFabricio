@@ -22,6 +22,8 @@
     <title>Itens Roubados</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/detalhes.css" />" />
+    <script type="application/javascript" src="<c:url value="/resources/javascript/funcoes.js" />"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 <div class="principal">
@@ -51,7 +53,7 @@
                             <c:forEach items="${ocorrencia.telefones}" var="telefone">
                                 <td>${telefone.tel_telefone}</td>
                             </c:forEach>
-                            <td><a href="/atualizar?codigo=${ocorrencia.oc_codigo}">Ir</a> </td>
+                            <td><a  onclick="atualizar(${ocorrencia.oc_codigo})">Ir</a> </td>
                             <td><a href="/deletar?codigo=${ocorrencia.oc_codigo}">Ir</a> </td>
                         </tr>
                     </c:forEach>

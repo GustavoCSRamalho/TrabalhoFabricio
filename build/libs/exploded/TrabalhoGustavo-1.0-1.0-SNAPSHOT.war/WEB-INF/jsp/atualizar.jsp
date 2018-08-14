@@ -17,6 +17,8 @@
     <title>Itens Roubados</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/detalhes.css" />" />
+    <script type="application/javascript" src="<c:url value="/resources/javascript/funcoes.js" />"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 <div class="principal">

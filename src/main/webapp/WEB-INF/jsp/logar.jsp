@@ -18,6 +18,8 @@
     <title>Itens Roubados</title>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/detalhesLogarERegistrar.css" />" />
+    <script type="application/javascript" src="<c:url value="/resources/javascript/funcoes.js" />"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body class="fundo">
 <div class="principal">
@@ -32,9 +34,10 @@
         <div class="conteudo">
             <div class="formulario">
                 <form action="logar" method="post">
-                    <p>Usuario : <input type="text" name="us_usuario"></p>
-                    <p>Senha : <input type="password" name="us_senha"></p>
-                    <input type="submit" value="Logar">
+                    <p>Usuario : <input id="us_usuario" type="text" name="us_usuario" ></p>
+                    <p>Senha : <input id="us_senha" type="password" name="us_senha" ></p>
+                    <%--<input type="submit" value="Logar">--%>
+                    <a onclick="logar()">Logar</a>
                 </form>
             </div>
         </div>
