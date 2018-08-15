@@ -28,7 +28,7 @@
 <body class="fundo">
 <div class="principal">
     <div class="cabecalho"></div>
-    <div class="menu mudarfundo">
+    <div class="menu fundocabecalho">
         <ul>
             <li><a href="/cadastro">Cadastrar ocorrencia</a></li>
             <li><a href="/sair">Sair</a></li>

@@ -24,7 +24,7 @@
 <body class="fundo">
 <div class="principal">
     <div class="cabecalho "></div>
-    <div class="menu mudarfundo">
+    <div class="menu fundocabecalho">
         <ul>
             <li><a href="/">Logar</a></li>
             <li><a href="/registrar">Registrar</a></li>
