@@ -1,11 +1,13 @@
 package integracao.ocorrencia;
 
 
+import org.junit.AfterClass;
+import org.junit.Assert;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.List;
 
 //@RunWith(SpringJUnit4ClassRunner.class)//@ContextConfiguration(locations = {"classpath:../webapp/WEB-INF/dispatcher-servlet.xml","classpath:../webapp/WEB-INF/web.xml"})
 
@@ -22,73 +24,53 @@ public class Ocorrencia {
 //    @Autowired
 //    private OcorrenciaServico ocorrenciaServico;
 
+    private static Connection connection = null;
     public static String status = "Não conectou...";
-//    @Autowired
-//    private OcorrenciaServicoImplementacao ocorrenciaServicoImplementacao;
 
-//    @Autowired
-//    private ApplicationContext applicationContext;
-
-    @Test
-    public void teste() {
-        Connection connection = null;          //atributo do tipo Connection
-
-
+    @BeforeClass
+    public static void iniciarVariaveis(){
+        //atributo do tipo Connection
         try {
-
-// Carregando o JDBC Driver padrão
-
             String driverName = "com.mysql.jdbc.Driver";
-
             Class.forName(driverName);
-
-
-// Configurando a nossa conexão com um banco de dados//
-
-//            String serverName = "localhost";    //caminho do servidor do BD
-
-//            String mydatabase ="mysql";        //nome do seu banco de dados
-
-//            String url = "jdbc:mysql://" + serverName + "/" + mydatabase;
             String url = "jdbc:mysql://localhost:3306/egammer";
             String username = "root";        //nome de um usuário de seu BD
-
             String password = "password";      //sua senha de acesso
-
             connection = DriverManager.getConnection(url, username, password);
-
-
-            //Testa sua conexão//
-
             if (connection != null) {
-
                 status = ("STATUS--->Conectado com sucesso!");
-
             } else {
-
                 status = ("STATUS--->Não foi possivel realizar conexão");
-
             }
-
-
-//            return connection;
-
-
         } catch (ClassNotFoundException e) {  //Driver não encontrado
-
-
             System.out.println("O driver expecificado nao foi encontrado.");
-
-//            return null;
-
         } catch (SQLException e) {
-
-//Não conseguindo se conectar ao banco
-
             System.out.println("Nao foi possivel conectar ao Banco de Dados.");
-
-//            return null;
-
         }
     }
+
+    @AfterClass
+    public static void fecharConeccao() throws SQLException{
+//        connection.commit();
+        connection.close();
+    }
+
+
+    @Test
+    public void testeListar() throws SQLException {
+        Statement estado = connection.createStatement();
+        String consulta = "SELECT * FROM Ocorrencia";
+        ResultSet listaDeOcorrencia = (ResultSet) estado.executeQuery(consulta);
+        Assert.assertNotNull(listaDeOcorrencia);
+
+    }
+
+    @Test
+    public void testeAtualizar(){}
+
+    @Test
+    public void testeDeletar(){}
+
+    @Test
+    public void testeCriar(){}
 }
