@@ -23,7 +23,7 @@
 <body>
 <div class="principal">
     <div class="cabecalho"></div>
-    <div class="menu">
+    <div class="menu mudarfundo">
         <ul>
             <li><a href="/cadastro">Cadastrar ocorrencia</a></li>
             <li><a href="/sair">Sair</a></li>

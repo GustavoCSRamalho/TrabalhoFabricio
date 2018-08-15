@@ -31,10 +31,10 @@
     <script type="application/javascript" src="<c:url value="/resources/javascript/funcoes.js" />"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<body>
+<body class="fundo">
 <div class="principal">
     <div class="cabecalho"></div>
-    <div class="menu">
+    <div class="menu mudarfundo">
         <ul>
             <li><a href="/">Logar</a></li>
             <li><a href="/registrar">Registrar</a></li>
