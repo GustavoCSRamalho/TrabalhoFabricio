@@ -1,11 +1,11 @@
 package integracao.ocorrencia;
 
 
-import org.junit.AfterClass;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
+import org.junit.runners.MethodSorters;
+import org.springframework.transaction.annotation.Transactional;
 
+import javax.swing.plaf.nimbus.State;
 import java.sql.*;
 import java.util.List;
 
@@ -19,6 +19,8 @@ import java.util.List;
 //@ContextConfiguration(locations = {"classpath:../../../src/main/webapp/WEB-INF/dispatcher-servlet.xml"})
 //@RunWith(SpringJUnit4ClassRunner.class)
 //@ContextConfiguration//@ContextConfiguration(classes={OcorrenciaServico.class,OcorrenciaServicoImplementacao.class})
+@Transactional
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class Ocorrencia {
 
 //    @Autowired
@@ -57,20 +59,36 @@ public class Ocorrencia {
 
 
     @Test
-    public void testeListar() throws SQLException {
+    public void teste2Listar() throws SQLException {
         Statement estado = connection.createStatement();
-        String consulta = "SELECT * FROM Ocorrencia";
+        String consulta = "SELECT * FROM Ocorrencia where Ocorrencia.oc_codigo=1000";
         ResultSet listaDeOcorrencia = (ResultSet) estado.executeQuery(consulta);
+        System.out.println("2");
         Assert.assertNotNull(listaDeOcorrencia);
 
     }
 
     @Test
-    public void testeAtualizar(){}
+    public void teste3Atualizar() throws SQLException{
+        Statement estado = connection.createStatement();
+        String consulta = "UPDATE Ocorrencia SET Ocorrencia.oc_tipo ='Deu ruim' WHERE Ocorrencia.oc_codigo=1000";
+        estado.executeUpdate(consulta);
+        System.out.println("3");
+    }
 
     @Test
-    public void testeDeletar(){}
+    public void teste4Deletar() throws SQLException{
+        Statement estado = connection.createStatement();
+        String consulta = "DELETE FROM Ocorrencia where Ocorrencia.oc_codigo=1000";
+        estado.executeUpdate(consulta);
+        System.out.println("4");
+    }
 
     @Test
-    public void testeCriar(){}
+    public void teste1Criar() throws SQLException{
+//        Statement estado = connection.createStatement();
+//        String consulta = "INSERT INTO Ocorrencia(oc_codigo,oc_tipo,oc_descricao,oc_usuario) VALUES(1000,'Demencia','Muito louco','Douglas')";
+//        estado.executeUpdate(consulta);
+        System.out.println("1");
+    }
 }
