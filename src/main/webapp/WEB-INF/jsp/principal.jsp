@@ -25,10 +25,10 @@
     <script type="application/javascript" src="<c:url value="/resources/javascript/funcoes.js" />"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<body>
+<body class="fundo">
 <div class="principal">
     <div class="cabecalho"></div>
-    <div class="menu">
+    <div class="menu fundocabecalho">
         <ul>
             <li><a href="/cadastro">Cadastrar ocorrencia</a></li>
             <li><a href="/sair">Sair</a></li>
@@ -36,7 +36,7 @@
     </div>
     <div class="corpo">
         <div class="conteudo">
-            <div class="lista">
+            <div class="lista mudarfundo">
                 <table>
                     <tr>
                         <th>Tipo</th>
