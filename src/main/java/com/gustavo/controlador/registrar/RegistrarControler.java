@@ -1,7 +1,7 @@
 package com.gustavo.controlador.registrar;
 
 import com.gustavo.modelo.usuario.dto.UsuarioDTO;
-import com.gustavo.visao.usuario.UsuarioServico;
+import com.gustavo.dao.usuario.UsuarioServico;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

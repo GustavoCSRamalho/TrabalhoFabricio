@@ -2,7 +2,7 @@ package unidade.usuario;
 
 
 import com.gustavo.modelo.usuario.Usuario;
-import com.gustavo.visao.usuario.implementado.UsuarioServicoImplementacao;
+import com.gustavo.dao.usuario.implementado.UsuarioServicoImplementacao;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
