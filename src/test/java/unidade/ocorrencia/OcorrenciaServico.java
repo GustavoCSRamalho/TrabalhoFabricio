@@ -2,7 +2,7 @@ package unidade.ocorrencia;
 
 
 import com.gustavo.modelo.ocorrencia.Ocorrencia;
-import com.gustavo.visao.boletim.implementado.OcorrenciaServicoImplementacao;
+import com.gustavo.dao.ocorrencia.implementado.OcorrenciaServicoImplementacao;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
